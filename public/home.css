@@ -12,10 +12,10 @@
     width: 100%;
 }
 .navbar .nav-logo{
-    padding-left: 30px;
+    padding-left: 70px;
 }
 .navbar .nav-link{
-    padding-right: 30px;
+    padding-right: 70px;
 }
 .nav-link ul li{
     float: left;
@@ -38,37 +38,37 @@
     height: 1px;
     background-color:black;
 }
-.about{
+.home{
     display: flex;
     align-items: center;
     justify-content:space-around;
     background-color: #DC8250;
 }
-.about-kiri{
+.home-kiri{
     margin-top: 20px;
     font-family: 'pacifico';
     color: #FED203;
 }
-.about-kiri h1{
+.home-kiri h1{
     font-size: 44px;
 }
-.about-kiri p{
+.home-kiri p{
     font-size: 24px;
 }
-.about-kanan{
+.home-kanan{
     margin-top: 20px;
     background-image: url('images/Ellipse 1.png');
     background-repeat: no-repeat;
     background-position:bottom;
     background-size: 310px;
 }
-.about-kanan img{
+.home-kanan img{
     background-image: url('images/Ellipse 2.png');
     background-repeat: no-repeat;
     background-position:right;
     background-size: 310px;
 }
-.btn-about{
+.btn-home{
     margin-top: 10px;
     height: 56px;
     width: 208px;
@@ -79,7 +79,7 @@
     font-family: 'neuton';
     background-color: #FED203;
 }
-.btn-about:hover{
+.btn-home:hover{
     margin-top: 10px;
     height: 56px;
     width: 208px;
@@ -90,4 +90,25 @@
     font-family: 'neuton';
     background-color: #EBBD91;
     transition: 1s;
+}
+.about{
+    background-color: #FDF0EA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-kanan{
+    margin-left: 70px;
+    margin-top: -20px;
+}
+.about .about-kanan h2{
+    font-family: 'pacifico';
+    margin-top: -40px;
+    margin-bottom: 25px;
+    color: #DC8250;
+    font-weight: normal;
+    font-size: 33px;
+}
+.about .about-kanan p{
+    font-family: 'neuton';
 }
