@@ -27,7 +27,67 @@
 .nav-link ul li a{
     color: black;
     text-decoration: none;
+    position: relative;
 }
-.nav-link ul li a:hover{
-    border-bottom: 1px solid black;
+.nav-link ul li a:hover:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 1px;
+    background-color:black;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #DC8250;
+}
+.about-kiri{
+    margin-top: 20px;
+    font-family: 'pacifico';
+    color: #FED203;
+}
+.about-kiri h1{
+    font-size: 44px;
+}
+.about-kiri p{
+    font-size: 24px;
+}
+.about-kanan{
+    margin-top: 20px;
+    background-image: url('images/Ellipse 1.png');
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-size: 310px;
+}
+.about-kanan img{
+    background-image: url('images/Ellipse 2.png');
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size: 310px;
+}
+.btn-about{
+    margin-top: 10px;
+    height: 56px;
+    width: 208px;
+    border-radius: 20px;
+    border: none;
+    font-weight: normal;
+    font-size: 23px;
+    font-family: 'neuton';
+    background-color: #FED203;
+}
+.btn-about:hover{
+    margin-top: 10px;
+    height: 56px;
+    width: 208px;
+    border-radius: 20px;
+    border: none;
+    font-weight: normal;
+    font-size: 23px;
+    font-family: 'neuton';
+    background-color: #EBBD91;
+    transition: 1s;
 }
