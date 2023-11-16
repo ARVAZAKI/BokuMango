@@ -142,7 +142,7 @@
     display: flex;
     justify-content: space-evenly;    
     margin-top: 25px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 .products .list-products .card{
     display: block;
@@ -191,12 +191,41 @@
     font-weight: normal;
     padding-top: 20px;
     color: #DC8250;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .testimony .testi-row{
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 50px;
 }
-.tesimony .testi-row .testi-card{
-    
+.testimony .testi-row .testi-card{
+    border-left: 10px solid #DC8250;
+}
+.testimony .testi-row .testi-card .testi-text{
+    padding-left: 7px;
+}
+.testimony .testi-row .testi-card .testi-profile{
+    padding-left: 7px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.testimony .testi-row .testi-card .testi-profile img{
+    border: none;
+    border-radius: 100%;
+}
+.testimony .testi-row .testi-card .testi-profile h3{
+    margin-left: 10px;
+}
+.footer{
+    color: white;
+    background-color:black;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
 }
