@@ -12,6 +12,9 @@ app.get('/login', (req, res) => {
     res.render('login')
 })
 
+app.get('/cart', (req, res) => {
+    res.render('cart')
+})
 
 app.listen(4000, () => {
     console.log("app running well...")
