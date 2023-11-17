@@ -7,9 +7,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: auto;
+    height: 70px;
     background-color: #DC8250;
     width: 100%;
+    position: fixed;
 }
 .navbar .nav-logo{
     padding-left: 70px;
@@ -131,7 +132,7 @@
 .list-products{
     margin-top: 20px;
 }
-.products .list-products .card img{
+.products .list-products .card-product img{
     border-radius: 20%;
 }
 .products .list-products .products1{
@@ -144,7 +145,7 @@
     margin-top: 25px;
     padding-bottom: 40px;
 }
-.products .list-products .card{
+.products .list-products .card-product{
     display: block;
     height: 290px;
     width: 190px;
@@ -152,7 +153,7 @@
     padding: 10px 10px 10px 10px;
     border-radius: 20px;
 }
-.products .list-products .card:hover{
+.products .list-products .card-product:hover{
     display: block;
     height: 290px;
     width: 190px;
@@ -164,7 +165,7 @@
     margin-left: -5px;
     transition: 0.7s;
 }
-.products .list-products .card button{
+.products .list-products .card-product button{
     margin-top: 10px;
     padding: 7px;
     border: none;
@@ -173,7 +174,7 @@
     font-family: 'neuton';
     font-size: 15px;
 }
-.products .list-products .card button:hover{
+.products .list-products .card-product button:hover{
     margin-top: 10px;
     padding: 7px;
     border: none;
@@ -229,4 +230,41 @@
     justify-content: center;
     font-size: 25px;
     font-weight: bold;
+}
+.contact{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.contact .form-contact{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.contact .form-contact .form-input{
+    display: grid;
+}
+.contact .form-contact .form-input label{
+    margin: 10px 0px 10px 0px;
+}
+.contact .input-email{
+    width: 350px;
+    border: 1px solid grey;
+    height: 25px;
+    border-radius: 10px;
+}
+.contact textarea{
+    border-style: none;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.contact .form-contact .form-button{
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid red;
+    width: 50px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.contact .form-contact .form-input .form-email:focus{
+    border: 1px solid blue;
 }
