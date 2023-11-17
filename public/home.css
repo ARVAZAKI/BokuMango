@@ -44,6 +44,7 @@
     align-items: center;
     justify-content:space-around;
     background-color: #DC8250;
+    padding-bottom: 85px;
 }
 .home-kiri{
     margin-top: 20px;
@@ -97,6 +98,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 45px;
 }
 .about .about-kanan{
     margin-left: 40px;
@@ -120,10 +122,12 @@
 }
 .products{
     background-color: #EBBD91;
+    padding-top: 35px;
+    padding-bottom:35px;
 }
 .products h2{
     text-align: center;
-    padding-top: 20px;
+    padding-top: -20px;
     font-family: 'pacifico';
     font-weight: normal;
     font-size: 25px;
@@ -133,7 +137,7 @@
     margin-top: 20px;
 }
 .products .list-products .card-product img{
-    border-radius: 20%;
+    border-radius: 100%;
 }
 .products .list-products .products1{
     display: flex;
@@ -142,7 +146,7 @@
 .products .list-products .products2{
     display: flex;
     justify-content: space-evenly;    
-    margin-top: 25px;
+    margin-top: 45px;
     padding-bottom: 40px;
 }
 .products .list-products .card-product{
@@ -185,6 +189,8 @@
 }
 .testimony{
     background-color: #FDF0EA;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .testimony h2{
     font-family: 'pacifico';
@@ -232,13 +238,24 @@
     font-weight: bold;
 }
 .contact{
-    margin-top: 10px;
-    margin-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 70px;
+    background-color: #EBBD91;
+}
+.contact h3{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'pacifico';
+    font-weight: normal;
+    font-size: 30px;
+    color: #DC8250;
 }
 .contact .form-contact{
     display: grid;
     align-items: center;
     justify-content: center;
+    font-family: 'neuton';
 }
 .contact .form-contact .form-input{
     display: grid;
@@ -260,11 +277,24 @@
 .contact .form-contact .form-button{
     padding: 10px;
     text-decoration: none;
-    border: 1px solid red;
     width: 50px;
     margin-top: 15px;
     border-radius: 10px;
+    background-color: #FED203;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
 }
 .contact .form-contact .form-input .form-email:focus{
     border: 1px solid blue;
+}
+.contact .form-contact .form-button:hover{
+    padding: 10px;
+    text-decoration: none;
+    width: 50px;
+    margin-top: 13px;
+    margin-right: -2px;
+    border-radius: 10px;
+    background-color: #facf0f;
+    box-shadow: 10px 10px #FED203;
+    transition: 0.8s;
 }
