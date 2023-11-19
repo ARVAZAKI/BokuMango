@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.latar{
+    z-index: -100;
+    display: flex;
+    justify-content: space-between;
+}
+.latar .latar1{
+    background-color: #F0BC2D;
+    z-index: -100;
+    width: 550px;
+    height: 610px;
+}
+.latar .latar2{
+    background-color: #FDF0EA;
+    z-index: -100;
+    width: 100%;
+    height: 610px;
+}
+.form-register{
+    width: 710px;
+    height: 450px;
+    margin-top: -540px;
+    margin-left: 190px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.form-register .form-daftar{
+    background-color: #FDF0EA;
+    height: 100%;
+    width: 350px;
+    border-radius: 0px 0px 0px 20px;
+    font-family: 'neuton';
+    margin: auto;
+}
+.form-register .form-image img{
+    height: 450px;
+    border-radius: 0px 20px 0px 0px;
+}
+.form-register .form-daftar h2{
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.form-register .form-daftar input{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    width: 225px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+    padding-left: 15px;
+}
+.form-register .form-daftar input::placeholder{
+    padding-left: 10px;
+}
+.form-register .form-daftar input:focus{
+    background-color: white;
+    color: black;
+}
+.form-register .form-daftar button{
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    border: none;
+    width: 136px;
+    height: 34px;
+    border-radius: 20px;
+    background-color: #DC8250;
+}
+.form-register .form-daftar h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    padding-top: 80px;
+    font-weight: normal;
+}
+.form-register .form-daftar a{
+    text-decoration: none;
+    color: #EB9D46;
+    margin-left: 5px;
+    font-weight: normal;
+}
+

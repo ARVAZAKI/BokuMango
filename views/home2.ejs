@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
     ">
     <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Neuton&family=Pacifico&display=swap");
+      @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
     </style>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
     "></script>
   </head>
   <body>
-    <div class="navbar">
+    <div class="navbar2">
       <div class="nav-logo">
         <img
           src="images/Logo web.png"
@@ -24,37 +26,31 @@
           alt="logo BokuMango"
         />
       </div>
-      <div class="nav-link">
+      <div class="nav-link2">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Testimony</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Product</a></li>
-          <li><a href="/login">Login</a></li>
+          <li><button type="button" class="btn bg-transparent btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="bi bi-cart"></i>
+          </button><li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person-circle"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>        
         </ul>
       </div>
     </div>
-    <div class="home">
-      <div class="home-kiri">
-        <p>Mangga</p>
+    <div class="home2">
+      <div class="home-text">
+        <p>Hai, <span>Username</span></p>
         <h1>
-          Buah tropis yang segar <br />
-          dan sehat
+          Selamat datang di <span>BokuMango</span>, <br>Platform penjualan mangga nomor 1
         </h1>
-        <button class="btn-home">Login</button>
-      </div>
-      <div class="home-kanan">
-        <div class="img1"></div>
-        <img
-          src="images/Mangga home.png"
-          alt="Mangga home"
-          height="500"
-          width="500"
-        />
-        <div class="img2"></div>
+        <button class="btn-home" type="button" >Mulai berbelanja <i class="bi bi-cart2"></i></button>
       </div>
     </div>
-    <div class="about">
+    <!-- <div class="about">
       <div class="about-kiri">
         <img src="images/Mangga About.png" height="660" width="465" alt="" />
       </div>
@@ -87,8 +83,8 @@
           nikmat, yang dapat Anda nikmati sepanjang tahun.
         </p>
       </div>
-    </div>
-    <div class="products">
+    </div> -->
+    <div class="products" id="products">
       <h2>Our Product</h2>
       <div class="list-products">
         <div class="products1">
@@ -102,7 +98,7 @@
             <p>Mangga apel</p>
             <p>9000/kg</p>
             <form action="/">
-              <button>Lihat Produk</button>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#produk1">Add to cart</button>
             </form>
           </div>
           <div class="card-product">
@@ -112,10 +108,10 @@
               width="187"
               alt=""
             />
-            <p>Mangga apel</p>
+            <p>Mangga alpukat</p>
             <p>9000/kg</p>
             <form action="/">
-              <button>Lihat Produk</button>
+              <button>Add to Cart</button>
             </form>
           </div>
           <div class="card-product">
@@ -125,10 +121,10 @@
               width="187"
               alt=""
             />
-            <p>Mangga apel</p>
+            <p>Mangga golek</p>
             <p>9000/kg</p>
             <form action="/">
-              <button>Lihat Produk</button>
+              <button>Add to Cart</button>
             </form>
           </div>
           <div class="card-product">
@@ -138,51 +134,105 @@
               width="187"
               alt=""
             />
-            <p>Mangga apel</p>
+            <p>Mangga malibu</p>
             <p>9000/kg</p>
             <form action="/">
-              <button>Lihat Produk</button>
+              <button>Add to Cart</button>
             </form>
           </div>
         </div>
         <div class="products2">
           <div class="card-product">
             <img
-              src="images/Mangga apel.webp"
+              src="images/Mangga arumanis.jpg"
               height="206"
               width="187"
               alt=""
             />
-            <p>Mangga apel</p>
+            <p>Mangga arumanis</p>
             <p>9000/kg</p>
             <form action="/">
-              <button>Lihat Produk</button>
+              <button>Add to Cart</button>
             </form>
           </div>
           <div class="card-product">
             <img
-              src="images/Mangga Alpukat.jpeg"
+              src="images/Mangga gedong gincu.webp"
               height="206"
               width="187"
               alt=""
             />
-            <p>Mangga apel</p>
+            <p>Mangga gedong gincu</p>
             <p>9000/kg</p>
             <form action="/">
-              <button>Lihat Produk</button>
+              <button>Add to Cart</button>
             </form>
           </div>
           <div class="card-product">
             <img
-              src="images/Mangga golek.jpeg"
+              src="images/Mangga manalagi.jpg"
               height="206"
               width="187"
               alt=""
             />
-            <p>Mangga apel</p>
+            <p>Mangga manalagi</p>
             <p>9000/kg</p>
             <form action="/">
-              <button>Lihat Produk</button>
+              <button>Add to Cart</button>
+            </form>
+          </div>
+          <div class="card-product">
+            <img
+              src="images/Mangga podang.jpg"
+              height="206"
+              width="187"
+              alt=""
+            />
+            <p>Mangga podang</p>
+            <p>9000/kg</p>
+            <form action="/">
+              <button>Add to Cart</button>
+            </form>
+          </div>
+        </div>
+        <div class="products2">
+          <div class="card-product">
+            <img
+              src="images/Mangga harummanis.jpg"
+              height="206"
+              width="187"
+              alt=""
+            />
+            <p>Mangga harum manis</p>
+            <p>9000/kg</p>
+            <form action="/">
+              <button>Add to Cart</button>
+            </form>
+          </div>
+          <div class="card-product">
+            <img
+              src="images/Mangga kwenijpg.jpg"
+              height="206"
+              width="187"
+              alt=""
+            />
+            <p>Mangga kweni</p>
+            <p>9000/kg</p>
+            <form action="/">
+              <button>Add to Cart</button>
+            </form>
+          </div>
+          <div class="card-product">
+            <img
+              src="images/Mangga indramayu.jpg"
+              height="206"
+              width="187"
+              alt=""
+            />
+            <p>Mangga indramayu</p>
+            <p>9000/kg</p>
+            <form action="/">
+              <button>Add to Cart</button>
             </form>
           </div>
           <div class="card-product">
@@ -192,14 +242,13 @@
               width="187"
               alt=""
             />
-            <p>Mangga apel</p>
+            <p>Mangga malibu</p>
             <p>9000/kg</p>
             <form action="/">
-              <button>Lihat Produk</button>
+              <button>Add to Cart</button>
             </form>
           </div>
         </div>
-        <button class="btn d-flex mx-auto mt-5">Lihat product lainnya...</button>
       </div>
     </div>
     <div class="testimony">
@@ -244,5 +293,68 @@
     <div class="footer">
       @copyright kelompok 2
     </div>
+    <!-- Modal -->
+<div class="modal modal-lg fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-fade" id="produk1" tabindex="-1" aria-labelledby="produk1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-head-custom">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Product</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex ">
+        <div class="ms-2">
+          <div id="carouselproduk1" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/mangga apel.webp" class="d-block rounded" alt="..." height="150" width="150">
+              </div>
+              <div class="carousel-item">
+                <img src="images/mangga apel.webp" class="d-block rounded" alt="..." height="150" width="150">            
+              </div>
+              <div class="carousel-item">
+                <img src="images/mangga apel.webp" class="d-block rounded" alt="..." height="150" width="150">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselproduk1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselproduk1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>        </div>
+        <div class="ms-2">
+          <h3>Mangga apel</h3>
+          <h5 class="mt-2">Rp 9.000</h5>
+          <hr>
+          <i class="bi bi-patch-check me-1"></i>Jaminan belanja aman
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   </body>
 </html>

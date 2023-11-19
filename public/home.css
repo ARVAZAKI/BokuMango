@@ -7,10 +7,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 90px;
     background-color: #DC8250;
     width: 100%;
     position: fixed;
+}
+.navbar2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color: #DC8250;
+    width: 100%;
+}
+.navbar2 .nav-link ul li a i{
+    width: 90px;
 }
 .navbar .nav-logo{
     padding-left: 70px;
@@ -25,10 +36,24 @@
     font-weight: bold;
     font-size: 20px;
 }
+.nav-link2 ul li{
+    float: left;
+    list-style: none;
+    margin-right: 25px;
+    font-weight: bold;
+    font-size: 20px;
+}
 .nav-link ul li a{
     color: black;
     text-decoration: none;
     position: relative;
+    font-weight: inherit;
+}
+.nav-link2 ul li a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    font-weight: inherit;
 }
 .nav-link ul li a:hover:after{
     content: "";
@@ -45,6 +70,26 @@
     justify-content:space-around;
     background-color: #DC8250;
     padding-bottom: 85px;
+}
+.home2{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #DC8250;
+    padding-bottom: 85px;
+    height: 520px;
+}
+.home2 p{
+    font-family: 'nauton';
+    font-weight: normal;
+    font-size: 22px;
+}
+.home2 span{
+    color: #FED203;
+}
+.home2 h1{
+    font-family: 'neuton';
+    font-weight: normal;
 }
 .home-kiri{
     margin-top: 20px;
@@ -127,7 +172,8 @@
 }
 .products h2{
     text-align: center;
-    padding-top: -20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-family: 'pacifico';
     font-weight: normal;
     font-size: 25px;
@@ -135,6 +181,7 @@
 }
 .list-products{
     margin-top: 20px;
+    padding-bottom: 30px;
 }
 .products .list-products .card-product img{
     border-radius: 100%;
@@ -147,20 +194,27 @@
     display: flex;
     justify-content: space-evenly;    
     margin-top: 45px;
-    padding-bottom: 40px;
+}
+.products .list-products button{
+    background-color: #facf0f;
+    font-family: 'neuton';
+}
+.products .list-products button:hover{
+    box-shadow: 3px 3px #fff;
+    transition: 0.7s;
 }
 .products .list-products .card-product{
     display: block;
-    height: 290px;
-    width: 190px;
+    height: 350px;
+    width: 210px;
     background-color: #FED203;
     padding: 10px 10px 10px 10px;
     border-radius: 20px;
 }
 .products .list-products .card-product:hover{
     display: block;
-    height: 290px;
-    width: 190px;
+    height: 350px;
+    width: 210px;
     background-color: white;
     padding: 10px 10px 10px 10px;
     border-radius: 20px;
@@ -260,6 +314,9 @@
 .contact .form-contact .form-input{
     display: grid;
 }
+.contact .form-contact .form-input input{
+    padding-left: 10px;
+}
 .contact .form-contact .form-input label{
     margin: 10px 0px 10px 0px;
 }
@@ -273,11 +330,13 @@
     border-style: none;
     border: 1px solid grey;
     border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 .contact .form-contact .form-button{
     padding: 10px;
     text-decoration: none;
-    width: 50px;
+    width: 70px;
     margin-top: 15px;
     border-radius: 10px;
     background-color: #FED203;
@@ -290,11 +349,14 @@
 .contact .form-contact .form-button:hover{
     padding: 10px;
     text-decoration: none;
-    width: 50px;
+    width: 75px;
     margin-top: 13px;
     margin-right: -2px;
     border-radius: 10px;
     background-color: #facf0f;
     box-shadow: 10px 10px #FED203;
     transition: 0.8s;
+}
+.bg-head-custom{
+    background-color: #FED203;
 }
