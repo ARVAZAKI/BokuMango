@@ -30,6 +30,7 @@
     border: none;
     color: white;
     background-color: black;
+    padding-left: 15px;
 }
 .login-page .login-form input::placeholder{
     padding-left: 10px;
@@ -42,7 +43,7 @@
 .login-page .login-image img{
     height: 610px;
 }
-.login-page .login-form button{
+.login-page .login-form .button{
     margin: auto;
     display: block;
     margin-top: 30px;
@@ -51,6 +52,7 @@
     height: 34px;
     border-radius: 20px;
     background-color: #DC8250;
+    padding-left: 0;
 }
 .login-page .login-form h4{
     display: flex;
