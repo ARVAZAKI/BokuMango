@@ -36,14 +36,18 @@
                 <i class="bi bi-person-circle"></i>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Logout</a></li>
+                <li>
+                  <form action="/logout" method="get">
+                    <input type="submit" value="Logout" />
+                  </form>
+                </li>
               </ul>        
         </ul>
       </div>
     </div>
     <div class="home2">
       <div class="home-text">
-        <p>Hai, <span>Username</span></p>
+        <p>Hai, <span>username</span></p>
         <h1>
           Selamat datang di <span>BokuMango</span>, <br>Platform penjualan mangga nomor 1
         </h1>
@@ -340,17 +344,23 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-          </div>        </div>
-        <div class="ms-2">
+          </div>
+        </div>
+        <div class="ms-2 mt-2">
           <h3>Mangga apel</h3>
           <h5 class="mt-2">Rp 9.000</h5>
           <hr>
           <i class="bi bi-patch-check me-1"></i>Jaminan belanja aman
+          <hr>
+          <div class="card shadow-lg p-2" style="margin-left: -150px; font-family: 'neuton';">
+            <p>mangga dengan jenis ini memiliki kriteria yang khas dengan bentuk buahnya yang bulat layaknya bentuk buah apel. Warna buah ini juga sangat bisa bervariasi, yaitu warna hijau, warna hijau kemerahan, dan bahkan bisa berwarna merah.</p>
+          </div>
         </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn" style="background-color: #FED203;
+        ">Add to Cart</button>
       </div>
     </div>
   </div>

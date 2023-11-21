@@ -31,13 +31,20 @@ connection.connect((err) => {
 app.get('/', (req, res) => {
     res.render('home')
 })
+app.get('/validate', (req, res, next) => {
+    if(req.id){
+        next(res.render('home2'))
+    }else{
+        next(res.render('login'))
+    }
+})
 app.get('/boku-home', (req, res) => {
     res.render('home2')
 })
 app.get('/login', (req, res) => {
-    res.render('login', {session: req.session})
+    res.render('login')
 })
-app.post('/login', (req, res, next) => {
+app.post('/auth', (req, res, next) => {
     let email = req.body.email
     let password = req.body.password
     if(email && password){
@@ -47,7 +54,7 @@ app.post('/login', (req, res, next) => {
                 for(var count = 0; count < data.length; count++){
                     if(data[count].password == password){
                         req.session.id = data[count].id;
-                        res.redirect('/boku-home')
+                        next(res.redirect('/boku-home'))
                     }else{
                         res.send('incorect password')
                     }
@@ -62,7 +69,7 @@ app.post('/login', (req, res, next) => {
     }
 })
 app.get('/logout', (req, res, next) => {
-    res.session.destroy()
+    req.session.destroy()
     res.redirect('/')
 })
 app.get('/register', (req, res) => {
