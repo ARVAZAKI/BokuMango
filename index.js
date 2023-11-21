@@ -76,6 +76,10 @@ app.get('/register', (req, res) => {
     res.render('register')
 })
 
+app.get('/cart', (req, res) => {
+    res.render('cart')
+})
+
 app.listen(4000, () => {
     console.log("app running well...")
 })
