@@ -38,7 +38,7 @@
               <ul class="dropdown-menu">
                 <li>
                   <form action="/logout" method="get">
-                    <input type="submit" value="Logout" />
+                    <input type="submit" value="Logout" style="border: none; background: none;"/>
                   </form>
                 </li>
               </ul>        
@@ -330,10 +330,23 @@
             <td>9000</td>
           </tr>
         </table>
+        <div class="row d-flex justify-content-end">
+          <div class="col-4">
+            <div class="card">
+              <div class="card-header bg-head-custom text-center">Total</div>
+              <div class="card-body">
+                <div class="d-flex justify-content-between" style="border-bottom: 1px solid black;">
+                  <p>Subtotal : </p>
+                  <p>9000</p>
+                </div>
+                <button class="btn d-flex justify-content-center" style="border: 1px solid grey; margin-left: 15px; margin-top: 10px; border-radius: 10px;">proceed to checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
