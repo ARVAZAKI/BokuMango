@@ -308,8 +308,8 @@
         <h1 class="modal-title fs-5" id="exampleModalLabel">Cart</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <table class="table table-responsive">
+      <div class="modal-body">  
+        <table class="table table-responsive cart" id="cart">
           <tr>
             <th>#</th>
             <th>product</th>
@@ -317,18 +317,7 @@
             <th>quantity</th>
             <th>subtotal</th>
           </tr>
-          <tr>
-            <td>
-              <button class="border-0 bg-transparent"><i class="bi bi-x-circle"></i></button>
-            </td>
-            <td class="d-flex">
-              <img src="images/mangga podang.jpg" alt="" height="50" width="50">
-              <p class="ms-2">Mangga podang <br> 1kg</p>
-            </td>
-            <td>9000</td>
-            <td>1</td>
-            <td>9000</td>
-          </tr>
+          <tbody id="cartItem"></tbody>
         </table>
         <div class="row d-flex justify-content-end">
           <div class="col-4">
@@ -337,7 +326,7 @@
               <div class="card-body">
                 <div class="d-flex justify-content-between" style="border-bottom: 1px solid black;">
                   <p>Subtotal : </p>
-                  <p>9000</p>
+                  <p id="total"></p>
                 </div>
                 <button class="btn d-flex justify-content-center" style="border: 1px solid grey; margin-left: 15px; margin-top: 10px; border-radius: 10px;">proceed to checkout</button>
               </div>
@@ -351,7 +340,7 @@
     </div>
   </div>
 </div>
-<div class="modal modal-fade" id="produk1" tabindex="-1" aria-labelledby="produk1" aria-hidden="true">
+<div class="modal modal-fade produk1" id="produk1" tabindex="-1" aria-labelledby="produk1" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header bg-head-custom">
@@ -383,7 +372,7 @@
           </div>
         </div>
         <div class="ms-2 mt-2">
-          <h3 class="fs-3" style="font-family: 'neuton';">Mangga apel</h3>
+          <h3 class="fs-3" id="produk1" style="font-family: 'neuton';">Mangga apel</h3>
           <h5 class="mt-2 fs-4" style="font-family:'neuton';">Rp 9.000 <span class="fs-5">/kg</span></h5>
           <hr>
           <i class="bi bi-patch-check me-1"></i>Jaminan belanja aman
@@ -396,7 +385,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn" style="background-color: #FED203;
-        ">Add to Cart</button>
+        " onclick="addToCart(0)" data-bs-dismiss="modal">Add to Cart</button>
       </div>
     </div>
   </div>
@@ -446,7 +435,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn" style="background-color: #FED203;
-        ">Add to Cart</button>
+        " onclick="addToCart(1)" data-bs-dismiss="modal">Add to Cart</button>
       </div>
     </div>
   </div>
@@ -496,7 +485,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn" style="background-color: #FED203;
-        ">Add to Cart</button>
+        " onclick="addToCart(2)" data-bs-dismiss="modal">Add to Cart</button>
       </div>
     </div>
   </div>
@@ -548,7 +537,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn" style="background-color: #FED203;
-        ">Add to Cart</button>
+        " onclick="addToCart(3)" data-bs-dismiss="modal">Add to Cart</button>
       </div>
     </div>
   </div>
@@ -598,7 +587,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn" style="background-color: #FED203;
-        ">Add to Cart</button>
+        " onclick="addToCart(4)" data-bs-dismiss="modal">Add to Cart</button>
       </div>
     </div>
   </div>
@@ -648,7 +637,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn" style="background-color: #FED203;
-        ">Add to Cart</button>
+        " onclick="addToCart(5)" data-bs-dismiss="modal">Add to Cart</button>
       </div>
     </div>
   </div>
@@ -698,7 +687,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn" style="background-color: #FED203;
-        ">Add to Cart</button>
+        " onclick="addToCart(6)" data-bs-dismiss="modal">Add to Cart</button>
       </div>
     </div>
   </div>
@@ -748,7 +737,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn" style="background-color: #FED203;
-        ">Add to Cart</button>
+        " onclick="addToCart(7)" data-bs-dismiss="modal">Add to Cart</button>
       </div>
     </div>
   </div>
@@ -798,7 +787,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn" style="background-color: #FED203;
-        ">Add to Cart</button>
+        " onclick="addToCart(8)" data-bs-dismiss="modal">Add to Cart</button>
       </div>
     </div>
   </div>
@@ -848,7 +837,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn" style="background-color: #FED203;
-        ">Add to Cart</button>
+        " onclick="addToCart(9)" data-bs-dismiss="modal">Add to Cart</button>
       </div>
     </div>
   </div>
@@ -898,7 +887,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn" style="background-color: #FED203;
-        ">Add to Cart</button>
+        " onclick="addToCart(10)" data-bs-dismiss="modal">Add to Cart</button>
       </div>
     </div>
   </div>
@@ -948,10 +937,11 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn" style="background-color: #FED203;
-        ">Add to Cart</button>
+        " onclick="addToCart(11)" data-bs-dismiss="modal">Add to Cart</button>
       </div>
     </div>
   </div>
 </div>
+<script src="cart.js"></script>
   </body>
 </html> 
