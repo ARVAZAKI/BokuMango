@@ -90,7 +90,7 @@ function displaycart(a) {
     let j = 0, total = 0
    if(cart.length == 0){
     document.getElementById('cartItem').innerHTML = "Your Cart is Empty..."
-    document.getElementById('total').innerHTML = "Rp ,-"
+    document.getElementById('total').innerHTML = "Rp 0,-"
    }else{
     document.getElementById('cartItem').innerHTML = cart.map((items) => {
         let {image,title,price} = items

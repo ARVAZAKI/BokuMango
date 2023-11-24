@@ -31,25 +31,26 @@
           <li><button type="button" class="btn bg-transparent btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <i class="bi bi-cart"></i>
           </button><li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown " style="margin-top: 8px;">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="bi bi-person-circle"></i>
               </a>
               <ul class="dropdown-menu">
                 <li>
                   <form action="/logout" method="get">
-                    <input type="submit" value="Logout" style="border: none; background: none;"/>
+                    <input type="submit" value="Logout" style="border: none; background: none; padding-left: 35px; "/>
                   </form>
                 </li>
               </ul>        
         </ul>
       </div>
     </div>
-    <div class="home2">
+    <div class="home2" id="home">
       <div class="home-text">
         <% if(pesan.length > 0){ %>
           <div class="alert alert-success" style="font-family: 'neuton';"><%= pesan %></div>
         <% } %>
+        <div id="liveAlertPlaceholder"></div>
         <p>Hai, <span>Boku People</span></p>
         <h1>
           Selamat datang di <span>BokuMango</span>, <br>Platform penjualan mangga nomor 1
@@ -328,7 +329,7 @@
                   <p>Subtotal : </p>
                   <p id="total"></p>
                 </div>
-                <button class="btn d-flex justify-content-center" style="border: 1px solid grey; margin-left: 15px; margin-top: 10px; border-radius: 10px;">proceed to checkout</button>
+                <button class="btn d-flex justify-content-center" style="border: 1px solid grey; margin-left: 15px; margin-top: 10px; border-radius: 10px;" id="reloadButton">proceed to checkout</button>
               </div>
             </div>
           </div>
@@ -385,7 +386,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn" style="background-color: #FED203;
-        " onclick="addToCart(0)" data-bs-dismiss="modal">Add to Cart</button>
+        " onclick="addToCart(0)" data-bs-dismiss="modal" id="liveAlertBtn">Add to Cart</button>
       </div>
     </div>
   </div>
@@ -943,5 +944,6 @@
   </div>
 </div>
 <script src="cart.js"></script>
+<script src="notification.js"></script>
   </body>
 </html> 
