@@ -1,3 +1,9 @@
+const alertTrigger = document.getElementById('notifButton')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('Mangga anda telah ditambahkan ke cart...', 'success')
+  })
+}
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 const appendAlert = (message, type) => {
   const wrapper = document.createElement('div')
@@ -11,12 +17,7 @@ const appendAlert = (message, type) => {
   alertPlaceholder.append(wrapper)
 }
 
-const alertTrigger = document.getElementById('liveAlertBtn')
-if (alertTrigger) {
-  alertTrigger.addEventListener('click', () => {
-    appendAlert('Mangga anda telah ditambahkan ke cart...', 'success')
-  })
-}
+
 document.getElementById('reloadButton').addEventListener('click', () => {
   location.reload()
 })

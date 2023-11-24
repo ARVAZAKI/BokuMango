@@ -112,6 +112,9 @@ app.post('/contact-form2', (req, res)=>{
         res.redirect('/')
     })
 })
+app.use('/',(req, res)=>{
+    res.end('404 ga nemu')
+})
 app.listen(4000, () => {
     console.log("app running well...")
 })
